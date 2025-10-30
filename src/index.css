@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">');
+
+
+
 
 @plugin "tailwindcss-animate";
-
 @custom-variant dark (&:is(.dark *));
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -121,4 +130,49 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+@layer base {
+  h1, h2, h3, h4, h5, h6, p, div, span {
+    font-weight: inherit;
+    font-size: inherit;
+  }
+}
+
+/* Announcement bar styles (full-bleed) */
+.ann {
+  background-color: #fde2e4;   /* soft pink */
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  color: #5b2333;              /* deep rose text */
+}
+
+.ann-inner {
+  max-width: 72rem;            /* ~max-w-6xl */
+  margin-inline: auto;
+  padding: 1rem;               /* px-4 py-4 */
+  text-align: center;
+}
+
+/* Big bold lines */
+.ann-line1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 800;
+  font-size: 2.5rem;      /* roughly text-4xl */
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.ann-line2 {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;           /* ~text-2xl */
+  line-height: 1.25;
+  color: #000000;              /* slightly lighter */
+}
+
+/* Optional: scale down on small screens */
+@media (max-width: 480px) {
+  .ann-line1 { font-size: 1.5rem; }
+  .ann-line2 { font-size: 1.125rem; }
 }
