@@ -95,6 +95,99 @@ export default function App() {
         </Routes>
       </div>
 
+{/* Product Placeholder Grid */}
+<div className="max-w-6xl mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+
+  {/* Product Card 1 */}
+  <div className="product-card">
+    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
+      <span className="opacity-40 font-serifLogo text-xl">Image</span>
+    </div>
+
+    <div className="product-card-body">
+      <h3 className="product-card-title">Lavender Sage</h3>
+      <p className="text-sm opacity-80 mt-1">
+        Ingredients: Olive oil, coconut oil, lavender essential oil
+      </p>
+    </div>
+  </div>
+
+  {/* Product Card 2 */}
+  <div className="product-card">
+    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
+      <span className="opacity-40 font-serifLogo text-xl">Image</span>
+    </div>
+
+    <div className="product-card-body">
+      <h3 className="product-card-title">Honey Oatmeal</h3>
+      <p className="text-sm opacity-80 mt-1">
+        Ingredients: Oats, honey, shea butter
+      </p>
+    </div>
+  </div>
+
+  {/* Product Card 3 */}
+  <div className="product-card">
+    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
+      <span className="opacity-40 font-serifLogo text-xl">Image</span>
+    </div>
+
+    <div className="product-card-body">
+      <h3 className="product-card-title">Citrus Mint</h3>
+      <p className="text-sm opacity-80 mt-1">
+        Ingredients: Peppermint, orange peel, coconut oil
+      </p>
+    </div>
+  </div>
+
+  {/* Product Card 4 */}
+  <div className="product-card">
+    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
+      <span className="opacity-40 font-serifLogo text-xl">Image</span>
+    </div>
+
+    <div className="product-card-body">
+      <h3 className="product-card-title">Citrus Mint</h3>
+      <p className="text-sm opacity-80 mt-1">
+        Ingredients: Peppermint, orange peel, coconut oil
+      </p>
+    </div>
+  </div>
+
+  {/* Product Card 5 */}
+  <div className="product-card">
+    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
+      <span className="opacity-40 font-serifLogo text-xl">Image</span>
+    </div>
+
+    <div className="product-card-body">
+      <h3 className="product-card-title">Citrus Mint</h3>
+      <p className="text-sm opacity-80 mt-1">
+        Ingredients: Peppermint, orange peel, coconut oil
+      </p>
+    </div>
+  </div>
+
+
+  {/* Product Card 6 */}
+  <div className="product-card">
+    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
+      <span className="opacity-40 font-serifLogo text-xl">Image</span>
+    </div>
+
+    <div className="product-card-body">
+      <h3 className="product-card-title">Citrus Mint</h3>
+      <p className="text-sm opacity-80 mt-1">
+        Ingredients: Peppermint, orange peel, coconut oil
+      </p>
+    </div>
+  </div>
+
+
+</div>
+
+
+
       {/* Footer */}
       <footer className="bg-[var(--color-card)] text-[var(--color-text)] mt-12">
         <div className="w-full h-[2px] bg-[var(--color-secondary)]"></div>
