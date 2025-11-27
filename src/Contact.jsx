@@ -53,7 +53,7 @@ export default function Contact() {
 
         <textarea
           name="message"
-          placeholder="Your message or order details. Add phone number if desired."
+          placeholder="Your message or order details. Add phone number if desired. We will reach out soon!"
           required
           className="bg-white border border-[var(--color-primary)]/30 rounded-lg p-3 w-full h-32 resize-none 
                focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
@@ -63,6 +63,41 @@ export default function Contact() {
             Send Message
             </button>
       </form>
+
+      {/* ===== VENMO SECTION ===== */}
+      <div className="mt-16 text-center">
+
+        {/* Row 1 — Title */}
+        <h3 className="font-serifLogo text-3xl font-bold text-[var(--color-text)] mb-2">
+          Venmo
+        </h3>
+
+        {/* Row 2 — Name + Username */}
+        <p className="font-body text-xl text-[var(--color-primary)] mb-6">
+          Shannon MacCuaig — <span className="font-semibold">@smaccuaig</span>
+        </p>
+
+        {/* Row 3 — Profile Picture + QR Code */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-4">
+
+          {/* Profile photo */}
+          <img
+            src="/gus.png"
+            alt="Venmo Profile"
+            className="w-40 h-40 rounded-full shadow-md object-cover"
+          />
+
+          {/* QR Code */}
+          <img
+            src="/momvenmo.png"
+            alt="Venmo QR Code"
+            className="w-40 h-40 shadow-md rounded-lg"
+          />
+
+        </div>
+      </div>
+
+
 
       {status && (
         <p className="mt-4 text-center text-green-700 font-medium">{status}</p>

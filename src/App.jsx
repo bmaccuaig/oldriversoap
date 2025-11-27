@@ -1,23 +1,6 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
-//product cards
-// <div className="product-card">
-//  <img src="/soap.jpg" />
-//  <div className="product-card-body">
-//    <h3 className="product-card-title">Lavender Sage</h3>
-//    <p className="product-card-price">$6.00</p>
-//  </div>
-//</div>
-
-//buttons
-//<button className="btn-primary">Buy Now</button>
-//<button className="btn-secondary">Learn More</button>
-
-//headings
-//<h1 className="text-h1 font-serifLogo">...</h1>
-//<h2 className="text-h2 font-serifLogo">...</h2>
-
 
 // Optional UI imports (keep your styling components if used)
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -52,7 +35,7 @@ export default function App() {
           </h1>
 
           {/* Links */}
-          <div className="flex gap-8 text-lg font-medium">
+          <div className="flex gap-8 text-2xl font-serifLogo font-bold">
             <Link to="/" className="hover:opacity-80 transition">
               Home / Products
             </Link>

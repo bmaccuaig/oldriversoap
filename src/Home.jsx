@@ -11,9 +11,9 @@ export default function Home() {
 
       {/* Dog Logo */}
       <img
-        src="/dog-logo.png"
+        src="/dogo.png"
         alt="Old River Soap Co Dog Logo"
-        className="mx-auto w-30 mb-0 opacity-95"
+        className="mx-auto h-40 w-280 mb-0 opacity-85"
       />
 
       {/* Subtitle */}
@@ -41,17 +41,84 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {[...Array(6)].map((_, i) => (
-            <div key={i} className="product-card group">
-              <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center transition-opacity duration-300 group-hover:opacity-80">
-                <span className="opacity-40 font-serifLogo text-xl">Image</span>
-              </div>
-              <div className="product-card-body">
-                <h3 className="product-card-title">Seasonal Soap</h3>
-                <p className="text-sm opacity-80 mt-1">Ingredients list here</p>
-              </div>
+
+          {/* === Featured Soap #1 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Featured Soap 1"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
             </div>
-          ))}
+          </div>
+
+          {/* === Featured Soap #2 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Featured Soap 2"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Winter Mint</h3>
+              <p className="text-sm opacity-80 mt-1">Peppermint • Eucalyptus • Coconut Oil</p>
+            </div>
+          </div>
+
+          {/* === Featured Soap #3 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Featured Soap 3"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Winter Mint</h3>
+              <p className="text-sm opacity-80 mt-1">Peppermint • Eucalyptus • Coconut Oil</p>
+            </div>
+          </div>
+
+          {/* === Featured Soap #4 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Featured Soap 4"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Winter Mint</h3>
+              <p className="text-sm opacity-80 mt-1">Peppermint • Eucalyptus • Coconut Oil</p>
+            </div>
+          </div>
+
+          {/* === Featured Soap #5 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Featured Soap 5"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Winter Mint</h3>
+              <p className="text-sm opacity-80 mt-1">Peppermint • Eucalyptus • Coconut Oil</p>
+            </div>
+          </div>
+
+          {/* === Featured Soap #6 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Featured Soap 6"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Winter Mint</h3>
+              <p className="text-sm opacity-80 mt-1">Peppermint • Eucalyptus • Coconut Oil</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -73,17 +140,85 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {[...Array(6)].map((_, i) => (
-            <div key={i} className="product-card group">
-              <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center transition-opacity duration-300 group-hover:opacity-80">
-                <span className="opacity-40 font-serifLogo text-xl">Image</span>
-              </div>
-              <div className="product-card-body">
-                <h3 className="product-card-title">Mainstay Soap</h3>
-                <p className="text-sm opacity-80 mt-1">Ingredients list here</p>
-              </div>
+
+          {/* === Mainstay Soap #1 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Mainstay Soap 1"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
             </div>
-          ))}
+          </div>
+
+          {/* === Mainstay Soap #2 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Mainstay Soap 2"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
+          {/* === Mainstay Soap #3 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Mainstay Soap 3"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
+          {/* === Mainstay Soap #4 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Mainstay Soap 4"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
+          {/* === Mainstay Soap #5 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Mainstay Soap 5"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
+          {/* === Mainstay Soap #6 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Mainstay Soap 6"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -105,19 +240,92 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {[...Array(6)].map((_, i) => (
-            <div key={i} className="product-card group">
-              <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center transition-opacity duration-300 group-hover:opacity-80">
-                <span className="opacity-40 font-serifLogo text-xl">Image</span>
-              </div>
-              <div className="product-card-body">
-                <h3 className="product-card-title">Product</h3>
-                <p className="text-sm opacity-80 mt-1">Ingredients list here</p>
-              </div>
+
+          {/* === Other product #1 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Misc product 1"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
             </div>
-          ))}
+          </div>
+
+          {/* === Other product #2 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Misc product 2"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
+          {/* === Other product #3 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Misc product 3"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
+          {/* === Other product #4 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Misc product 4"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
+          {/* === Other product #5 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Misc product 5"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
+          {/* === Other product #6 === */}
+          <div className="product-card group">
+            <img
+              src="/soap.jpg"
+              alt="Misc product 6"
+              className="w-full h-48 object-cover rounded-t-[var(--radius-card)] transition-opacity duration-300 group-hover:opacity-90"
+            />
+            <div className="product-card-body">
+              <h3 className="product-card-title">Pumpkin Spice</h3>
+              <p className="text-sm opacity-80 mt-1">Clove • Cinnamon • Shea Butter</p>
+            </div>
+          </div>
+
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="text-center my-20 text-3xl text-[var(--color-secondary)] font-serifLogo opacity-80">
+        ❧
+      </div>
 
     </main>
   );
