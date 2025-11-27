@@ -5,7 +5,7 @@ export default function Home() {
     <main className="max-w-6xl mx-auto px-4 py-8 text-center">
 
       {/* ===== HERO SECTION ===== */}
-      <h1 className="font-serifLogo text-7xl text-[var(--color-text)] italic mb-0">
+      <h1 className="font-serifLogo text-7xl text-[var(--color-text)] italic mb-3 md:mb-0">
         Old River Soap
       </h1>
 
@@ -13,7 +13,7 @@ export default function Home() {
       <img
         src="/dogo.png"
         alt="Old River Soap Co Dog Logo"
-        className="mx-auto h-40 w-280 mb-0 opacity-85"
+        className="mx-auto h-20 md:h-40 w-280 mb-0 opacity-85"
       />
 
       {/* Subtitle */}
@@ -22,7 +22,7 @@ export default function Home() {
       </p>
 
       {/* ===== SECTION NAVIGATION ===== */}
-      <div className="mt-8 flex justify-center gap-25 font-bold text-4xl font-serifLogo text-[var(--color-text)] mb-40">
+      <div className="mt-8 flex justify-center gap-3 text-sm md:gap-25 font-bold md:text-4xl font-serifLogo text-[var(--color-text)] mb-40">
         <a href="#featured" className="hover:opacity-70 transition">Featured Soaps</a>
         <a href="#mainstay" className="hover:opacity-70 transition">Mainstay Soaps</a>
         <a href="#other" className="hover:opacity-70 transition">Other Products</a>
