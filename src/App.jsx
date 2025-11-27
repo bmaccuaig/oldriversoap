@@ -23,35 +23,13 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Contact from "./Contact"
-
-// --- Individual pages ---
-function Home() {
-  return (
-    <main className="max-w-6xl mx-auto px-4 py-8 text-center">
-      <h1 className="font-serifLogo text-7xl text-[var(--color-text)] italic mb-4">
-        Old River Soap
-      </h1>
-
-    
-      <img
-        src="/dog-logo.png"
-        alt="Old River Soap dog logo"
-        className="mx-auto w-32 mb-2 opacity-95"
-      />
-
-
-      <p className="font-body text-lg text-[var(--color-primary)] tracking-wide">
-        Small-batch, handmade soaps crafted with care and natural ingredients
-      </p>
-    </main>
-  );
-}
+import Home from "./Home"
 
 
 // --- Main App Component ---
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FDF9F8]">
+    <div className="min-h-screen flex flex-col bg-[var(--color-bg)]">
 
       {/* Top info bar */}
       <div className="w-full bg-[var(--color-card)] text-[var(--color-text)]">
@@ -94,99 +72,6 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-
-{/* Product Placeholder Grid */}
-<div className="max-w-6xl mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
-
-  {/* Product Card 1 */}
-  <div className="product-card">
-    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
-      <span className="opacity-40 font-serifLogo text-xl">Image</span>
-    </div>
-
-    <div className="product-card-body">
-      <h3 className="product-card-title">Lavender Sage</h3>
-      <p className="text-sm opacity-80 mt-1">
-        Ingredients: Olive oil, coconut oil, lavender essential oil
-      </p>
-    </div>
-  </div>
-
-  {/* Product Card 2 */}
-  <div className="product-card">
-    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
-      <span className="opacity-40 font-serifLogo text-xl">Image</span>
-    </div>
-
-    <div className="product-card-body">
-      <h3 className="product-card-title">Honey Oatmeal</h3>
-      <p className="text-sm opacity-80 mt-1">
-        Ingredients: Oats, honey, shea butter
-      </p>
-    </div>
-  </div>
-
-  {/* Product Card 3 */}
-  <div className="product-card">
-    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
-      <span className="opacity-40 font-serifLogo text-xl">Image</span>
-    </div>
-
-    <div className="product-card-body">
-      <h3 className="product-card-title">Citrus Mint</h3>
-      <p className="text-sm opacity-80 mt-1">
-        Ingredients: Peppermint, orange peel, coconut oil
-      </p>
-    </div>
-  </div>
-
-  {/* Product Card 4 */}
-  <div className="product-card">
-    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
-      <span className="opacity-40 font-serifLogo text-xl">Image</span>
-    </div>
-
-    <div className="product-card-body">
-      <h3 className="product-card-title">Citrus Mint</h3>
-      <p className="text-sm opacity-80 mt-1">
-        Ingredients: Peppermint, orange peel, coconut oil
-      </p>
-    </div>
-  </div>
-
-  {/* Product Card 5 */}
-  <div className="product-card">
-    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
-      <span className="opacity-40 font-serifLogo text-xl">Image</span>
-    </div>
-
-    <div className="product-card-body">
-      <h3 className="product-card-title">Citrus Mint</h3>
-      <p className="text-sm opacity-80 mt-1">
-        Ingredients: Peppermint, orange peel, coconut oil
-      </p>
-    </div>
-  </div>
-
-
-  {/* Product Card 6 */}
-  <div className="product-card">
-    <div className="w-full h-48 bg-[var(--color-bg)] flex items-center justify-center">
-      <span className="opacity-40 font-serifLogo text-xl">Image</span>
-    </div>
-
-    <div className="product-card-body">
-      <h3 className="product-card-title">Citrus Mint</h3>
-      <p className="text-sm opacity-80 mt-1">
-        Ingredients: Peppermint, orange peel, coconut oil
-      </p>
-    </div>
-  </div>
-
-
-</div>
-
-
 
       {/* Footer */}
       <footer className="bg-[var(--color-card)] text-[var(--color-text)] mt-12">

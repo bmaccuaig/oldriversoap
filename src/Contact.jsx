@@ -29,36 +29,37 @@ export default function Contact() {
 
   return (
     <div className="max-w-xl mx-auto p-8">
-      <h1 className="font-serifLogo text-4xl mb-6 text-center">
+      <h1 className="font-serifLogo text-4xl mb-6 text-center ">
         Thank you for visiting ☺️ Whether you’d like to place an order or have a question, we’re here to help!
       </h1>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-6">
 
         <input
-          name="name"
           type="text"
+          name="name"
           placeholder="Your Name"
-          required
-          className="w-full px-4 py-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5b2333]"
+          className="bg-white border border-[var(--color-primary)]/30 rounded-lg p-3 w-full 
+                    focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
         />
 
         <input
-          name="email"
           type="email"
+          name="email"
           placeholder="Your Email"
-          required
-          className="w-full px-4 py-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5b2333]"
+          className="bg-white border border-[var(--color-primary)]/30 rounded-lg p-3 w-full 
+                    focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
         />
 
         <textarea
           name="message"
           placeholder="Your message or order details. Add phone number if desired."
           required
-          className="w-full px-4 py-2 border border-slate-300 rounded h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#5b2333]"
+          className="bg-white border border-[var(--color-primary)]/30 rounded-lg p-3 w-full h-32 resize-none 
+               focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
         />
 
-        <button type="submit" className="btn-primary w-full mt-4">
+        <button type="submit" className="btn-primary w-full mt-6 text-2xl">
             Send Message
             </button>
       </form>

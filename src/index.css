@@ -50,7 +50,21 @@
 @layer components {
   /* Primary button */
   .btn-primary {
-    @apply bg-[var(--color-primary)] text-white py-2 px-4 rounded font-medium transition hover:opacity-90;
+    @apply bg-[var(--color-primary)] 
+           text-white 
+           font-serifLogo 
+           tracking-wide 
+           rounded-lg 
+           px-6 py-3 
+           shadow-sm 
+           transition-all 
+           duration-300
+           hover:bg-[var(--color-primary)]/90
+           hover:shadow-md
+           active:scale-[0.98]
+           focus:outline-none 
+           focus:ring-2 
+           focus:ring-[var(--color-secondary)];
   }
 
   /* Secondary button */
@@ -60,9 +74,11 @@
 
   /* Product card */
   .product-card {
-    @apply bg-[var(--color-card)] rounded-[var(--radius-card)] shadow-md overflow-hidden transition hover:shadow-lg;
+    @apply bg-[var(--color-card)] rounded-[var(--radius-card)] shadow-md overflow-hidden transition-transform transition-shadow duration-300;
   }
-
+  .product-card:hover {
+    @apply -translate-y-2 shadow-lg;
+  }
   .product-card-body {
     @apply p-4;
   }
@@ -74,6 +90,18 @@
   .product-card-price {
     @apply text-lg font-medium text-[var(--color-primary)];
   }
+
+  .input-box {
+    @apply bg-white 
+           border border-[var(--color-primary)]/30 
+           rounded-lg 
+           p-3 w-full 
+           focus:outline-none 
+           focus:ring-2 focus:ring-[var(--color-secondary)]
+           placeholder:text-[var(--color-primary)]/50;
+  }
+
+
 }
 
 /* =========================================
