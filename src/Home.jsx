@@ -32,7 +32,7 @@ export default function Home() {
       {/* ===== FEATURED SECTION ====== */}
       {/* ============================= */}
 
-      <section id="featured" className="mt-20">
+      <section id="featured" className="scroll-mt-20 mt-20">
         <h2 className="font-serifLogo text-4xl text-[var(--color-text)] mb-4">
           Featured & Seasonal Soaps
         </h2>
@@ -131,7 +131,7 @@ export default function Home() {
       {/* ===== MAINSTAY SECTION ====== */}
       {/* ============================= */}
 
-      <section id="mainstay">
+      <section id="mainstay" className="scroll-mt-20 mt-20">
         <h2 className="font-serifLogo text-4xl text-[var(--color-text)] mb-4">
           Mainstay Soaps
         </h2>
@@ -231,7 +231,7 @@ export default function Home() {
       {/* ===== OTHER PRODUCTS ======== */}
       {/* ============================= */}
 
-      <section id="other" className="mb-12">
+      <section id="other" className="scroll-mt-20 mt-20">
         <h2 className="font-serifLogo text-4xl text-[var(--color-text)] mb-4">
           Other Products
         </h2>

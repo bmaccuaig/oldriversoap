@@ -1,32 +1,26 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 
 // Optional UI imports (keep your styling components if used)
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import Contact from "./Contact"
-import Home from "./Home"
+import Contact from "./Contact";
+import Home from "./Home";
+import ScrollToTop from "./ScrollToTop";
 
 
 // --- Main App Component ---
 export default function App() {
+  const location = useLocation();
   return (
     <div className="min-h-screen flex flex-col bg-[var(--color-bg)]">
 
-      {/* Top info bar */}
-      <div className="w-full bg-[var(--color-card)] text-[var(--color-text)]">
-        <div className="max-w-6xl mx-auto px-4 py-2 text-center">
-
-          <p className="font-serifLogo text-xl tracking-wide">
-            Official website opening • Handcrafted small-batch soap
-          </p>
-
-        </div>
-      </div>
-
+      <ScrollToTop />
+      
       {/* Nav Bar*/}
-      <nav className="w-full bg-[var(--color-primary)] text-white shadow-md">
+      <nav className="fixed top-0 left-0 w-full bg-[var(--color-primary)] text-white shadow-md z-50">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
           
           {/* Logo */}
@@ -36,9 +30,23 @@ export default function App() {
 
           {/* Links */}
           <div className="flex gap-8 text-2xl font-serifLogo font-bold">
-            <Link to="/" className="hover:opacity-80 transition">
-              Home / Products
-            </Link>
+            {location.pathname === "/" ? (
+              <button
+                onClick={() =>
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                  })
+                }
+                className="hover:opacity-80 transition"
+              >
+                Home / Products
+              </button>
+            ) : (
+              <Link to="/" className="hover:opacity-80 transition">
+                Home / Products
+              </Link>
+            )}
 
             <Link to="/contact" className="hover:opacity-80 transition">
               Contact / Order
@@ -49,7 +57,7 @@ export default function App() {
       </nav>
 
       {/* Page content */}
-      <div className="flex-grow text-slate-900">
+      <div className="flex-grow text-slate-900 pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />

@@ -30,6 +30,8 @@
   --radius-card: 0.75rem;
 }
 
+html {scroll-behavior: smooth;}
+
 /* =========================================
    Global Base Styles
    ========================================= */
