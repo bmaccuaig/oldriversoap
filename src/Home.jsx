@@ -22,17 +22,35 @@ export default function Home() {
       </p>
 
       {/* ===== SECTION NAVIGATION ===== */}
-      <div className="mt-8 flex justify-center gap-3 text-sm md:gap-25 font-bold md:text-4xl font-serifLogo text-[var(--color-text)] mb-40">
-        <a href="#featured" className="hover:opacity-70 transition">Featured Soaps</a>
-        <a href="#mainstay" className="hover:opacity-70 transition">Mainstay Soaps</a>
-        <a href="#other" className="hover:opacity-70 transition">Other Products</a>
-      </div>
+        <div className="
+          mt-8
+          flex 
+          flex-col sm:flex-row 
+          items-center justify-center 
+          gap-3 sm:gap-25
+          text-2xl sm:text-4xl font-bold
+          font-serifLogo 
+          text-[var(--color-text)]
+          mb-25 sm:mb-40
+        ">
+          <a href="#featured" className="hover:opacity-70 transition underline underline-offset-4 decoration-[car(--color-secondary)] decoration-2">Featured Soaps</a>
+
+          <span className="sm:hidden text-[var(--color-secondary)] text-4xl leading-none">❧</span>
+          <span className="hidden sm:inline text-[var(--color-secondary)] text-4xl leading-none">❧</span>
+
+          <a href="#mainstay" className="hover:opacity-70 transition underline underline-offset-4 decoration-[car(--color-secondary)] decoration-2">Mainstay Soaps</a>
+          
+          <span className="sm:hidden text-[var(--color-secondary)] text-4xl leading-none">❧</span>
+          <span className="hidden sm:inline text-[var(--color-secondary)] text-4xl leading-none">❧</span>
+
+          <a href="#other" className="hover:opacity-70 transition underline underline-offset-4 decoration-[car(--color-secondary)] decoration-2">Other Products</a>
+        </div>
 
       {/* ============================= */}
       {/* ===== FEATURED SECTION ====== */}
       {/* ============================= */}
 
-      <section id="featured" className="scroll-mt-20 mt-20">
+      <section id="featured" className="scroll-mt-32 sm scroll-mt-24 mt-20">
         <h2 className="font-serifLogo text-4xl text-[var(--color-text)] mb-4">
           Featured & Seasonal Soaps
         </h2>
@@ -131,7 +149,7 @@ export default function Home() {
       {/* ===== MAINSTAY SECTION ====== */}
       {/* ============================= */}
 
-      <section id="mainstay" className="scroll-mt-20 mt-20">
+      <section id="mainstay" className="scroll-mt-32 sm scroll-mt-24 mt-20">
         <h2 className="font-serifLogo text-4xl text-[var(--color-text)] mb-4">
           Mainstay Soaps
         </h2>
@@ -231,7 +249,7 @@ export default function Home() {
       {/* ===== OTHER PRODUCTS ======== */}
       {/* ============================= */}
 
-      <section id="other" className="scroll-mt-20 mt-20">
+      <section id="other" className="scroll-mt-32 sm scroll-mt-24 mt-20">
         <h2 className="font-serifLogo text-4xl text-[var(--color-text)] mb-4">
           Other Products
         </h2>
